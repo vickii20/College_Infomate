@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kongunadu College of Engineering and Technology (KNCET)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='css/logo.png') }}" alt="KNCET Logo">
+                <div class="logo-text">
+                    <h1>KNCET</h1>
+                    <p>Est. 2007</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#excellence">Excellence</a></li>
+                    <li><a href="#placement">Placement</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#contact" class="btn btn-outline">Contact</a>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">Autonomous | Accredited | Industry-Connected</div>
+                <h1>Kongunadu College of Engineering and Technology</h1>
+                <p>Empowering Engineers since 2007</p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Explore Programs</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>9+ UG Programs</h3>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-award"></i>
+                    <h3>NAAC Accredited</h3>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-building"></i>
+                    <h3>ISO 9001:2015</h3>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Research Centre</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About the College</h2>
+                <p>Excellence in Engineering Education</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='css/im1.jpg') }}" alt="KNCET Campus">
+                </div>
+                <div class="about-text">
+                    <p>Kongunadu College of Engineering and Technology (KNCET) is a premier educational institution established in 2007, offering quality education in engineering and technology. With state-of-the-art infrastructure and experienced faculty, we are committed to producing industry-ready engineers.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h4>Established</h4>
+                                <p>2007</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>Affiliated to</h4>
+                                <p>Anna University, Chennai</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <h4>Approvals</h4>
+                                <p>AICTE, UGC (2f, 12B), NAAC, NBA</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Certification</h4>
+                                <p>ISO 9001:2015 Certified</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-book"></i>
+                            <div>
+                                <h4>Programs</h4>
+                                <p>9 UG and 2 PG programs</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-microscope"></i>
+                            <div>
+                                <h4>Research</h4>
+                                <p>Research Centre in ECE Department</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Courses Offered</h2>
+                <p>Comprehensive Programs for Future Engineers</p>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab-header">
+                    <div class="tab-btn active" data-tab="ug">Undergraduate Programs</div>
+                    <div class="tab-btn" data-tab="pg">Postgraduate Programs</div>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="ug">
+                        <div class="course-grid">
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-laptop-code"></i></div>
+                                <h3>Computer Science and Engineering</h3>
+                                <p>B.E. CSE</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-desktop"></i></div>
+                                <h3>Information Technology</h3>
+                                <p>B.Tech. IT</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-microchip"></i></div>
+                                <h3>Electronics and Communication</h3>
+                                <p>B.E. ECE</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-bolt"></i></div>
+                                <h3>Electrical and Electronics</h3>
+                                <p>B.E. EEE</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-heartbeat"></i></div>
+                                <h3>Bio-Medical Engineering</h3>
+                                <p>B.E. BME</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-cogs"></i></div>
+                                <h3>Mechanical Engineering</h3>
+                                <p>B.E. MECH</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-building"></i></div>
+                                <h3>Civil Engineering</h3>
+                                <p>B.E. CIVIL</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-tractor"></i></div>
+                                <h3>Agricultural Engineering</h3>
+                                <p>B.Tech. AGRI</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-robot"></i></div>
+                                <h3>Artificial Intelligence & Data Science</h3>
+                                <p>B.Tech. AI & DS</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="pg">
+                        <div class="course-grid">
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-laptop-code"></i></div>
+                                <h3>Computer Science and Engineering</h3>
+                                <p>M.E. CSE</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="course-card">
+                                <div class="course-icon"><i class="fas fa-microchip"></i></div>
+                                <h3>Applied Electronics</h3>
+                                <p>M.E. Applied Electronics</p>
+                                <a href="#" class="btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Centers of Excellence -->
+    <section id="excellence" class="excellence section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Centres of Excellence</h2>
+                <p>Industry-Integrated Learning Environments</p>
+            </div>
+            
+            <div class="excellence-grid">
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>PCB Design and Development</h3>
+                    <p>State-of-the-art facilities for PCB design, fabrication, and testing</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Signal Processing & Networking</h3>
+                    <p>Advanced lab for signal processing and network research</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Dell EMC Data Science</h3>
+                    <p>Industry partnership for data science and analytics training</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Cisco Networking Academy</h3>
+                    <p>Certified training center for networking technologies</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>IoT Lab</h3>
+                    <p>Texas Instruments & ABE Semiconductor partnership</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Industrial Automation</h3>
+                    <p>Siemens & Mitsubishi collaboration for automation training</p>
+                </div>
+                <div class="excellence-card">
+                    <div class="excellence-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Centre for Energy Studies</h3>
+                    <p>Research and development in renewable energy technologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Placement -->
+    <section id="placement" class="placement section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Training & Placement</h2>
+                <p>Bridging Academia and Industry</p>
+            </div>
+            
+            <div class="placement-content">
+                <div class="placement-image">
+                    <img src="{{ url_for('static', filename='css/im2.jpg') }}" alt="Placement Training">
+                </div>
+                <div class="placement-info">
+                    <div class="placement-feature">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>
+                            <h3>Campus to Corporate Department</h3>
+                            <p>Comprehensive training in soft skills, communication, and aptitude</p>
+                        </div>
+                    </div>
+                    <div class="placement-feature">
+                        <i class="fas fa-handshake"></i>
+                        <div>
+                            <h3>Industry Partnerships</h3>
+                            <p>Collaborations with leading companies for internships and placements</p>
+                        </div>
+                    </div>
+                    <div class="placement-feature">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h3>Alumni Network</h3>
+                            <p>Strong alumni presence in top MNCs: TCS, Infosys, Wipro, HCL, Accenture, and more</p>
+                        </div>
+                    </div>
+                    
+                    <div class="company-logos">
+                        <h4>Our Recruiters</h4>
+                        <div class="logos-grid">
+                            <div class="logo-item">TCS</div>
+                            <div class="logo-item">Infosys</div>
+                            <div class="logo-item">Wipro</div>
+                            <div class="logo-item">HCL</div>
+                            <div class="logo-item">Accenture</div>
+                            <div class="logo-item">CTS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achievements</h2>
+                <p>Recognition of Excellence</p>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>AICTE Clean and Smart Campus Award</h3>
+                    <p>2019</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Utkrisht Sansthan Vishwakarma Award</h3>
+                    <p>2019</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>AICTE Chhatra Vishwakarma Award</h3>
+                    <p>2020 – 3rd Prize</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Intellectual Property</h3>
+                    <p>28 Patents, 6 Industrial Designs, 1 Copyright filed</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Research Grants</h3>
+                    <p>Multiple grants from DST, CSIR, ISRO, AICTE, etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section id="infrastructure" class="infrastructure section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Infrastructure</h2>
+                <p>State-of-the-Art Facilities</p>
+            </div>
+            
+            <div class="infra-tabs">
+                <div class="infra-tab-header">
+                    <div class="infra-tab active" data-tab="academic">Academic</div>
+                    <div class="infra-tab" data-tab="hostel">Hostel</div>
+                    <div class="infra-tab" data-tab="transport">Transport</div>
+                    <div class="infra-tab" data-tab="amenities">Amenities</div>
+                </div>
+                
+                <div class="infra-tab-content">
+                    <div class="infra-tab-pane active" id="academic">
+                        <div class="infra-content">
+                            <div class="infra-image">
+                                <img src="{{ url_for('static', filename='css/im3.jpg') }}" alt="Academic Infrastructure">
+                            </div>
+                            <div class="infra-details">
+                                <h3>Academic Facilities</h3>
+                                <ul class="infra-list">
+                                    <li><i class="fas fa-check-circle"></i> Indoor Stadium for various sports activities</li>
+                                    <li><i class="fas fa-check-circle"></i> Modern Labs with latest equipment and software</li>
+                                    <li><i class="fas fa-check-circle"></i> Digital Library with extensive collection of e-resources</li>
+                                    <li><i class="fas fa-check-circle"></i> Wi-Fi enabled campus with 100 Mbps connectivity</li>
+                                    <li><i class="fas fa-check-circle"></i> Power Backup (1120 KVA) for uninterrupted power supply</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="infra-tab-pane" id="hostel">
+                        <div class="infra-content">
+                            <div class="infra-image">
+                                <img src="{{ url_for('static', filename='css/im3.jpg') }}" alt="Academic Infrastructure">
+                            </div>
+                            <div class="infra-details">
+                                <h3>Hostel Facilities</h3>
+                                <ul class="infra-list">
+                                    <li><i class="fas fa-check-circle"></i> Separate hostels for boys and girls</li>
+                                    <li><i class="fas fa-check-circle"></i> Solar water heaters for eco-friendly hot water</li>
+                                    <li><i class="fas fa-check-circle"></i> LCD TVs in common rooms for entertainment</li>
+                                    <li><i class="fas fa-check-circle"></i> Well-equipped gym facilities</li>
+                                    <li><i class="fas fa-check-circle"></i> Laundry services for convenience</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="infra-tab-pane" id="transport">
+                        <div class="infra-content">
+                            <div class="infra-image">
+                                <img src="{{ url_for('static', filename='css/im5.jpg') }}" alt="Transport Infrastructure">
+                            </div>
+                            <div class="infra-details">
+                                <h3>Transportation</h3>
+                                <ul class="infra-list">
+                                    <li><i class="fas fa-check-circle"></i> Fleet of 53 buses for student transportation</li>
+                                    <li><i class="fas fa-check-circle"></i> Routes covering Namakkal, Trichy, and Karur</li>
+                                    <li><i class="fas fa-check-circle"></i> Comfortable and safe travel experience</li>
+                                    <li><i class="fas fa-check-circle"></i> GPS tracking for real-time monitoring</li>
+                                    <li><i class="fas fa-check-circle"></i> Experienced and trained drivers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="infra-tab-pane" id="amenities">
+                        <div class="infra-content">
+                            <div class="infra-image">
+                                <img src="{{ url_for('static', filename='images/amenities.jpg') }}" alt="Amenities">
+                            </div>
+                            <div class="infra-details">
+                                <h3>Additional Amenities</h3>
+                                <ul class="infra-list">
+                                    <li><i class="fas fa-check-circle"></i> Reverse Osmosis (RO) Water Plant for clean drinking water</li>
+                                    <li><i class="fas fa-check-circle"></i> Cafeteria with hygienic food options</li>
+                                    <li><i class="fas fa-check-circle"></i> Medical center with qualified staff</li>
+                                    <li><i class="fas fa-check-circle"></i> ATM facility within campus</li>
+                                    <li><i class="fas fa-check-circle"></i> Stationery store for academic supplies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chatbot Interface -->
+    <!-- Welcome Toggle Message -->
+    <div id="welcome-message" class="welcome-message">
+        Hey! Hi, I am here, ask a question
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div id="chatbot-icon" class="chatbot-icon">
+        <img src="https://img.icons8.com/color/48/000000/chat.png" alt="Chatbot Icon">
+    </div>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <div class="chatbot-header">
+            <h3>Kongunadu College Chatbot</h3>
+            <button id="close-chatbot">X</button>
+        </div>
+        <div id="chatbot-body" class="chatbot-body">
+            <!-- Chat messages will be appended here -->
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatbot-input" placeholder="Type your question...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+
+    <!-- Student Activities Section -->
+    <section id="activities" class="activities section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Student Activities & Clubs</h2>
+                <p>Holistic Development Beyond Academics</p>
+            </div>
+            
+            <div class="activities-content">
+                <div class="activities-info">
+                    <p>At KNCET, we believe in the holistic development of students through various extracurricular activities and clubs. These platforms provide opportunities for students to explore their interests, develop leadership skills, and contribute to society.</p>
+                    
+                    <div class="activities-grid">
+                        <div class="activity-item">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>NSS</h4>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>YRC</h4>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-tint"></i>
+                            <h4>RRC</h4>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-music"></i>
+                            <h4>Music Club</h4>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-tree"></i>
+                            <h4>Nature Club</h4>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-language"></i>
+                            <h4>Tamil Mandram</h4>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-photo-video"></i>
+                            <h4>Multimedia Club</h4>
+                        </div>
+                        <div class="activity-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovation Club</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="startup-policy">
+                        <h3><i class="fas fa-rocket"></i> Innovation & Startup Policy (KNISP'2021)</h3>
+                        <p>KNCET has established a comprehensive Innovation and Startup Policy to foster entrepreneurship among students and faculty. The policy provides guidance, mentorship, and resources for turning innovative ideas into successful startups.</p>
+                        <a href="#" class="btn-text">Learn More About KNISP <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="activities-image">
+                    <img src="{{ url_for('static', filename='images/activities.jpg') }}" alt="Student Activities">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications & Online Learning</h2>
+                <p>Continuous Learning Beyond Curriculum</p>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <img src="{{ url_for('static', filename='images/nptel.png') }}" alt="NPTEL">
+                    <h3>NPTEL</h3>
+                    <p>98 faculty completions</p>
+                    <div class="cert-progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <img src="{{ url_for('static', filename='images/spoken-tutorial.png') }}" alt="Spoken Tutorial">
+                    <h3>Spoken Tutorial</h3>
+                    <p>1730 student certificates</p>
+                    <div class="cert-progress">
+                        <div class="progress-bar" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <img src="{{ url_for('static', filename='images/udemy.png') }}" alt="Udemy">
+                    <h3>Udemy</h3>
+                    <p>Various technical courses</p>
+                    <div class="cert-progress">
+                        <div class="progress-bar" style="width: 78%"></div>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <img src="{{ url_for('static', filename='images/edureka.png') }}" alt="Edureka">
+                    <h3>Edureka</h3>
+                    <p>Professional certification courses</p>
+                    <div class="cert-progress">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section id="sports" class="sports section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sports Facilities</h2>
+                <p>Physical Fitness and Competitive Spirit</p>
+            </div>
+            
+            <div class="sports-content">
+                <div class="sports-image">
+                    <img src="{{ url_for('static', filename='images/sports.jpg') }}" alt="Sports Facilities">
+                </div>
+                <div class="sports-info">
+                    <div class="sports-feature">
+                        <i class="fas fa-volleyball-ball"></i>
+                        <div>
+                            <h3>Indoor Stadium</h3>
+                            <p>Multi-purpose indoor stadium with facilities for Rifle Range, Table Tennis, Chess, Badminton, and more</p>
+                        </div>
+                    </div>
+                    <div class="sports-feature">
+                        <i class="fas fa-running"></i>
+                        <div>
+                            <h3>Outdoor Sports</h3>
+                            <p>Spacious grounds for cricket, football, volleyball, basketball, and athletics</p>
+                        </div>
+                    </div>
+                    <div class="sports-feature">
+                        <i class="fas fa-dumbbell"></i>
+                        <div>
+                            <h3>Fitness Centers</h3>
+                            <p>Separate GYMs for Boys & Girls (3000 sq.ft with modern equipment)</p>
+                        </div>
+                    </div>
+                    <div class="sports-feature">
+                        <i class="fas fa-trophy"></i>
+                        <div>
+                            <h3>Tournaments</h3>
+                            <p>Regular inter-departmental and inter-collegiate tournaments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in Touch with KNCET</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Kongunadu College of Engineering and Technology,<br>Thottiam, Trichy District,<br>Tamil Nadu - 621215</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9876543210<br>04326-277266</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@kncet.edu.in<br>admissions@kncet.edu.in</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="placement">Placement Inquiry</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="KNCET Logo">
+                    <h3>KNCET</h3>
+                    <p>Empowering Engineers since 2007</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#excellence">Excellence</a></li>
+                        <li><a href="#placement">Placement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Faculty Portal</a></li>
+                        <li><a href="#">E-Learning</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Alumni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Admissions</h4>
+                    <ul>
+                        <li><a href="#">Apply Online</a></li>
+                        <li><a href="#">Admission Procedure</a></li>
+                        <li><a href="#">Scholarships</a></li>
+                        <li><a href="#">Fee Structure</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Kongunadu College of Engineering and Technology. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
