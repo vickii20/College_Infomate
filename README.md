@@ -1,10 +1,10 @@
-# **Kongunadu College Chatbot**
+# **Kongunadu College Chatbot** 🤖
 
 A smart chatbot for answering questions about Kongunadu College, powered by Flask, Sentence Transformers, and a local Mistral model via Ollama.
 
 ---
 
-## Table of Contents
+## Table of Contents 📑
 
 - [Overview](#overview)
 - [Features](#features)
@@ -22,22 +22,22 @@ A smart chatbot for answering questions about Kongunadu College, powered by Flas
 
 ---
 
-## Overview
+## Overview 🏫
 
 This project is a Flask-based web application that provides a chatbot interface for answering questions about Kongunadu College. It uses Sentence Transformers for text embeddings and a local Mistral model (via Ollama) for answer generation. The application also includes a contact form for users to submit inquiries.
 
 ---
 
-## Features
+## Features 🛠️
 
-- **Chatbot:** Answers queries about Kongunadu College using local document search and Mistral.
-- **CLI Mode:** Test the chatbot directly from the command line.
-- **Contact Form:** Users can submit inquiries via a web form.
-- **Modular Design:** Easily extendable for new features or data sources.
+- **Chatbot:** 🤖 Answers queries about Kongunadu College using local document search and Mistral.
+- **CLI Mode:** 💻 Test the chatbot directly from the command line.
+- **Contact Form:** 📬 Users can submit inquiries via a web form.
+- **Modular Design:** 🧩 Easily extendable for new features or data sources.
 
 ---
 
-## Project Structure
+## Project Structure 🗂️
 
 ```
 College_Infomate/
@@ -57,7 +57,7 @@ College_Infomate/
 
 ---
 
-## Prerequisites
+## Prerequisites 🧰
 
 - **OS:** Linux, macOS, or Windows (WSL recommended for Windows)
 - **Python:** 3.8+
@@ -67,7 +67,7 @@ College_Infomate/
 
 ---
 
-## Installation
+## Installation 🛠️
 
 ### 1. Clone the Repository
 
@@ -96,13 +96,13 @@ pip install -r requirements.txt
 
 ---
 
-## Configuration
+## Configuration ⚙️
 
 - Ensure Ollama is running before starting the Flask app.
 
 ---
 
-## Usage
+## Usage 🚀
 
 ### Start the Application
 
@@ -125,15 +125,15 @@ python chat.py
 
 ---
 
-## How it Works
+## How it Works ⚡
 
-- **Web Interface:** Flask serves the chatbot UI and contact form.
-- **Chatbot Pipeline:** User queries are embedded, relevant documents are searched locally, and Mistral generates answers.
-- **Contact Form:** Submissions are processed and (optionally) stored or emailed.
+- **Web Interface:** 🖥️ Flask serves the chatbot UI and contact form.
+- **Chatbot Pipeline:** 🔍 User queries are embedded, relevant documents are searched locally, and Mistral generates answers.
+- **Contact Form:** 📬 Submissions are processed and (optionally) stored or emailed.
 
 ---
 
-## API Endpoints
+## API Endpoints 🌐
 
 | Method | Endpoint         | Description                                 |
 |--------|------------------|---------------------------------------------|
@@ -143,7 +143,7 @@ python chat.py
 
 ---
 
-## Troubleshooting
+## Troubleshooting 🛠️
 
 - **Ollama Not Responding:** Ensure `ollama serve` is running and the model is pulled.
 - **No Answers from Chatbot:** Ensure your local document data is available and properly indexed.
@@ -151,7 +151,7 @@ python chat.py
 
 ---
 
-## Future Improvements
+## Future Improvements 🚧
 
 - Store contact form submissions in a database (e.g., SQLite, PostgreSQL)
 - Email notifications for new inquiries
