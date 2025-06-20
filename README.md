@@ -6,19 +6,18 @@ A smart chatbot for answering questions about Kongunadu College, powered by Flas
 
 ## Table of Contents 📑
 
-- [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [How it Works](#how-it-works)
-- [API Endpoints](#api-endpoints)
-- [Troubleshooting](#troubleshooting)
-- [Future Improvements](#future-improvements)
-- [Contributing](#contributing)
-- [License](#license)
+- Overview
+- Features
+- Project Structure
+- Prerequisites
+- Installation
+- Configuration
+- Usage
+- How it Works
+- API Endpoints
+- Troubleshooting
+- Future Improvements
+- Contributing
 
 ---
 
